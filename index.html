@@ -17,103 +17,142 @@
   </head>
   <body class="grid place-items-center min-h-screen bg-cl_Cream">
     <main class="px-2 my-20">
+      <!-- balance content -->
       <div class="flex justify-between bg-cl_Softred p-5 rounded-lg mb-4">
+        <!-- mybalance text -->
         <div class="space-y-1">
           <p class="text-cl_Verypaleorange text-xs font-normal">My balance</p>
           <h1 class="text-white font-bold tracking-wide text-xl">$921.48</h1>
         </div>
+        <!-- logo -->
         <img src="./images/logo.svg" alt="" />
       </div>
+      <!-- bars content -->
       <div class="p-5 pb-0 bg-white rounded-lg">
+        <!-- header -->
         <h1 class="text-xl font-bold">Spending - Last 7 days</h1>
+        <!-- bars container -->
         <div
-          class="flex fle-co items-end mt-8 h-32 space-x-2 border-b-2 pb-4 border-cl_Cream"
+          class="bars-container flex fle-co items-end mt-8 border-b-2 pb-4 border-cl_Cream space-x-2"
         >
-          <div class="space-y-2">
+          <!-- monday bar -->
+          <div class="space-y-2 w-12">
             <p
-              class="text-center bg-cl_Darkbrown text-white text-sm p-1.5 invisible rounded-md"
+              data-id="mon"
+              class="bar-text text-center bg-cl_Darkbrown text-white text-xs p-1 py-1.5 rounded-md invisible"
             >
               $0
             </p>
             <div
-              class="h-11 bg-cl_Softred rounded-md px-4 hover:brightness-150"
+              data-id="mon"
+              class="bar bg-cl_Softred rounded-md hover:brightness-150"
             ></div>
             <p class="text-cl_Mediumbrown text-xs text-center">mon</p>
           </div>
-          <div class="space-y-2">
+          <!-- end of monday bar -->
+          <!-- tuesday bar -->
+          <div class="space-y-2 w-12">
             <p
-              class="text-center bg-cl_Darkbrown text-white text-sm p-1.5 invisible rounded-md"
+              data-id="tue"
+              class="bar-text text-center bg-cl_Darkbrown text-white text-xs p-1 py-1.5 invisible rounded-md"
             >
               $0
             </p>
             <div
-              class="h-11 bg-cl_Softred rounded-md px-4 hover:brightness-150"
+              data-id="tue"
+              class="bar h-11 bg-cl_Softred rounded-md hover:brightness-150"
             ></div>
             <p class="text-cl_Mediumbrown text-xs text-center">tue</p>
           </div>
-          <div class="space-y-2">
+          <!-- end of tuesday bar -->
+          <!-- wednesday bar -->
+          <div class="space-y-2 w-12">
             <p
-              class="text-center bg-cl_Darkbrown text-white text-sm p-1.5 invisible rounded-md"
+              data-id="wed"
+              class="bar-text text-center bg-cl_Darkbrown text-white text-xs p-1 py-1.5 invisible rounded-md"
             >
               $0
             </p>
             <div
-              class="h-11 bg-cl_Softred rounded-md px-4 hover:brightness-150"
+              data-id="wed"
+              class="bar h-11 bg-cl_Softred rounded-md hover:brightness-150"
             ></div>
             <p class="text-cl_Mediumbrown text-xs text-center">wed</p>
           </div>
-          <div class="space-y-2">
+          <!-- end of wednesday bar -->
+          <!-- thursday bar -->
+          <div class="space-y-2 w-12">
             <p
-              class="text-center bg-cl_Darkbrown text-white text-sm p-1.5 invisible rounded-md"
+              data-id="thu"
+              class="bar-text text-center bg-cl_Darkbrown text-white text-xs p-1 py-1.5 invisible rounded-md"
             >
               $0
             </p>
             <div
-              class="h-11 bg-cl_Softred rounded-md px-4 hover:brightness-150"
+              data-id="thu"
+              class="bar h-11 bg-cl_Softred rounded-md hover:brightness-150"
             ></div>
             <p class="text-cl_Mediumbrown text-xs text-center">thu</p>
           </div>
-          <div class="space-y-2">
+          <!-- end of thursday bar -->
+          <!-- friday bar -->
+          <div class="space-y-2 w-12">
             <p
-              class="text-center bg-cl_Darkbrown text-white text-sm p-1.5 invisible rounded-md"
+              data-id="fri"
+              class="bar-text text-center bg-cl_Darkbrown text-white text-xs p-1 py-1.5 invisible rounded-md"
             >
               $0
             </p>
             <div
-              class="h-11 bg-cl_Softred rounded-md px-4 hover:brightness-150"
+              data-id="fri"
+              class="bar h-11 bg-cl_Softred rounded-md hover:brightness-150"
             ></div>
             <p class="text-cl_Mediumbrown text-xs text-center">fri</p>
           </div>
-          <div class="space-y-2">
+          <!-- end of friday bar -->
+          <!-- saturday bar -->
+          <div class="space-y-2 w-12">
             <p
-              class="text-center bg-cl_Darkbrown text-white text-sm p-1.5 invisible rounded-md"
+              data-id="sat"
+              class="bar-text text-center bg-cl_Darkbrown text-white text-xs p-1 py-1.5 invisible rounded-md"
             >
               $0
             </p>
             <div
-              class="h-11 bg-cl_Softred rounded-md px-4 hover:brightness-150"
+              data-id="sat"
+              class="bar h-11 bg-cl_Softred rounded-md hover:brightness-150"
             ></div>
             <p class="text-cl_Mediumbrown text-xs text-center">sat</p>
           </div>
-          <div class="space-y-2">
+          <!-- end of saturday bar -->
+          <!-- sunday bar -->
+          <div class="space-y-2 w-12">
             <p
-              class="text-center bg-cl_Darkbrown text-white text-sm p-1.5 invisible rounded-md"
+              data-id="sun"
+              class="bar-text text-center bg-cl_Darkbrown text-white text-xs p-1 py-1.5 rounded-md invisible"
             >
               $0
             </p>
             <div
-              class="h-11 bg-cl_Softred rounded-md px-4 hover:brightness-150"
+              data-id="sun"
+              class="bar h-11 bg-cl_Softred rounded-md hover:brightness-150"
             ></div>
             <p class="text-cl_Mediumbrown text-xs text-center">sun</p>
           </div>
+          <!-- end of sunday bar -->
         </div>
+        <!-- total section -->
         <div class="flex justify-between items-center py-5">
+          <!-- this month -->
           <div class="space-y-1">
             <p class="text-xs text-cl_Mediumbrown">Total this month</p>
             <h1 class="text-2xl font-bold text-cl_Darkbrown">$478.33</h1>
           </div>
+          <!-- % form last month -->
           <div class="self-end -mb-1">
-            <h2 class="text-right font-bold leading-5 text-cl_Darkbrown">
+            <h2
+              class="text-right font-bold leading-5 text-sm text-cl_Darkbrown"
+            >
               +2.4%
             </h2>
             <p class="text-cl_Mediumbrown text-sm">from last month</p>
